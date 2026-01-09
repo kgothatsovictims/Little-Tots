@@ -467,10 +467,12 @@ h1{
     color: white;
 }
 
-        footer {
+
+
+         footer {
             padding: 80px 20px 40px;
             color: #333;
-            font-family: 'Georgia', serif; /* Elegant, artistic font for watercolor feel */
+            font-family: 'Georgia', serif; 
             position: relative;
         }
 
@@ -478,18 +480,23 @@ h1{
             content: '';
             position: absolute;
             top: 0; left: 0; right: 0; bottom: 0;
-            background: var(--primary); /* Soft overlay for readability */
+            background: var(--primary);
+            background-image: url('./footer-background2.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
         }
 
-        .footer-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 40px;
-            position: relative;
-            z-index: 1;
-        }
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* MATCH HTML */
+    gap: 40px;
+    position: relative;
+    z-index: 1;
+    padding: 0 20px;
+}
+
 
         .branch {
             text-align: center;
@@ -498,7 +505,7 @@ h1{
         .branch h3 {
             font-size: 1.5rem;
             margin-bottom: 20px;
-            color: purple ; /* Deep purple accent */
+            color: purple ;
         }
 
         .branch p {
@@ -529,7 +536,7 @@ h1{
 .social-icons a {
     color: rgb(73, 8, 73);
     z-index: 1;
-    font-size: 1.9rem; /* Larger icons */
+    font-size: 1.9rem; 
     transition: all 0.3s ease;
 }
 
@@ -547,7 +554,7 @@ h1{
             color: #555;
             position: relative;
             z-index: 1;
-        }
+        } 
 
        .whatsapp-float {
     position: fixed;
@@ -615,6 +622,11 @@ h1{
     .btn-outline {
         align-self: center;
     }
+
+        .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
 }
 
 @media (max-width: 576px) {
@@ -665,6 +677,22 @@ h1{
     
 }
 
+@media (max-width: 600px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        text-align: center;
+    }
+
+    .branch h3 {
+        font-size: 1.3rem;
+    }
+
+    .branch p,
+    .branch a {
+        font-size: 0.95rem;
+    }
+}
 
 
 
